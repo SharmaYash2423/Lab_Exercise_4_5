@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Route to Symbiosis Bangalore</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+</head>
+<body>
+    <div id="map" style="height: 900px;"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script>
+        // Predefined location (replace with your desired coordinates)
+const destination = { lat: 12.908136, lng: 77.566939}; // Whitefield, Bangalore
+
+// Function to initialize the map and route
+function initializeMap(userLocation) {
+    const map = L.map('map').setView([userLocation.lat, userLocation.lng], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([userLocation.lat, userLocation.lng]).addTo(map)
+        .bindPopup('Your location')
+        .openPopup();
+
+    L.marker([destination.lat, destination.lng]).addTo(map)
+        .bindPopup('Destination')
+        .openPopup();
+
+    L.Routing.control({
+        waypoints: [
+            L.latLng(userLocation.lat, userLocation.lng),
+            L.latLng(destination.lat, destination.lng)
+        ]
+    }).addTo(map);
+}
+
+// Get user's location
+navigator.geolocation.getCurrentPosition(
+    (position) => {
+        const userLocation = { lat: position.coords.latitude, lng: position.coords.longitude };
+        initializeMap(userLocation);
+    },
+    (error) => {
+        console.error(error);
+        // Handle geolocation error (e.g., use a default location)
+    }
+);
+
+    </script>
+</body>
+</html>
