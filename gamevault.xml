@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- <!DOCTYPE gamevault SYSTEM "gamevault.dtd"> -->
+<!-- <?xml-stylesheet href="tailwind.xsl" type="text/xsl"?> -->
 <?xml-stylesheet href="gamevault.xsl" type="text/xsl"?>
 <gamevault xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns="http://www.example.com/gamevault" xsi:schemaLocation="http://www.example.com/gamevault
