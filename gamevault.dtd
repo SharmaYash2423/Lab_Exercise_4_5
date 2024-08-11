@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT gamevault (Game1, Game2, Game3, Game4, Game5, Game6, Game7, Game8, Game9)>
+<!ELEMENT Game1 (Name, Developer, Publisher, Genre, Platform, Rating, ReleaseYear)>
+<!ELEMENT Game2 (Name, Developer, Publisher, Genre, Platform, Rating, ReleaseYear)>
+<!ELEMENT Game3 (Name, Developer, Publisher, Genre, Platform, Rating, ReleaseYear)>
+<!ELEMENT Game4 (Name, Developer, Publisher, Genre, Platform, Rating, ReleaseYear)>
+<!ELEMENT Game5 (Name, Developer, Publisher, Genre, Platform, Rating, ReleaseYear)>
+<!ELEMENT Game6 (Name, Developer, Publisher, Genre, Platform, Rating, ReleaseYear)>
+<!ELEMENT Game7 (Name, Developer, Publisher, Genre, Platform, Rating, ReleaseYear)>
+<!ELEMENT Game8 (Name, Developer, Publisher, Genre, Platform, Rating, ReleaseYear)>
+<!ELEMENT Game9 (Name, Developer, Publisher, Genre, Platform, Rating, ReleaseYear)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Developer (#PCDATA)>
+<!ELEMENT Publisher (#PCDATA)>
+<!ELEMENT Genre (#PCDATA)>
+<!ELEMENT Platform (#PCDATA)>
+<!ELEMENT Rating (#PCDATA)>
+<!ELEMENT ReleaseYear (#PCDATA)>
+
+<!ENTITY RockstarGames "Rockstar Games">
+<!ENTITY CDProjekt "CD Projekt Red">
+<!ENTITY Bethesda "Bethesda Softworks">
+<!ENTITY RiotGames "Riot Games">
+<!ENTITY Ubisoft "Ubisoft">
+<!ENTITY BandaiNamco "Bandai Namco Entertainment">
+<!ENTITY SonyInteractive "Sony Interactive Entertainment">
+<!ENTITY RPG "Role-Playing Game">
+<!ENTITY FPS "First-Person Shooter">

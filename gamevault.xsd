@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.example.com/gamevault"
+           xmlns="http://www.example.com/gamevault"
+           elementFormDefault="qualified">
+
+    <xs:element name="gamevault">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Game1" type="GameType"/>
+                <xs:element name="Game2" type="GameType"/>
+                <xs:element name="Game3" type="GameType"/>
+                <xs:element name="Game4" type="GameType"/>
+                <xs:element name="Game5" type="GameType"/>
+                <xs:element name="Game6" type="GameType"/>
+                <xs:element name="Game7" type="GameType"/>
+                <xs:element name="Game8" type="GameType"/>
+                <xs:element name="Game9" type="GameType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="GameType">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Developer" type="xs:string"/>
+            <xs:element name="Publisher" type="xs:string"/>
+            <xs:element name="Genre" type="xs:string"/>
+            <xs:element name="Platform" type="xs:string"/>
+            <xs:element name="Rating">
+                <xs:simpleType>
+                    <xs:restriction base="xs:decimal">
+                        <xs:minInclusive value="0.0"/>
+                        <xs:maxInclusive value="10.0"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="ReleaseYear">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="2000"/>
+                        <xs:maxInclusive value="2024"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

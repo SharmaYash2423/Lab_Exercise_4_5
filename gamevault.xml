@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE gamevault SYSTEM "gamevault.dtd"> -->
+<?xml-stylesheet href="gamevault.xsl" type="text/xsl"?>
+<gamevault xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.example.com/gamevault" xsi:schemaLocation="http://www.example.com/gamevault
+gamevault.xsd">
+
+    <Game1>
+        <Name>Valorant</Name>
+        <Developer>&amp;RiotGames</Developer>
+        <Publisher>&amp;RiotGames</Publisher>
+        <Genre>Action, Multiplayer, FPS</Genre>
+        <Platform>PC</Platform>
+        <Rating>9.5</Rating>
+        <ReleaseYear>2020</ReleaseYear>
+    </Game1>
+
+    <Game2>
+        <Name>Tekken</Name>
+        <Developer>&amp;BandaiNamco</Developer>
+        <Publisher>&amp;BandaiNamco</Publisher>
+        <Genre>Multiplayer, Fighting</Genre>
+        <Platform>PC</Platform>
+        <Rating>8.5</Rating>
+        <ReleaseYear>2024</ReleaseYear>
+    </Game2>
+
+    <Game3>
+        <Name>Cyberpunk 2077</Name>
+        <Developer>&amp;CDProjekt</Developer>
+        <Publisher>&amp;CDProjekt</Publisher>
+        <Genre>Action RPG</Genre>
+        <Platform>PC</Platform>
+        <Rating>9.0</Rating>
+        <ReleaseYear>2020</ReleaseYear>
+    </Game3>
+
+    <Game4>
+        <Name>God of War</Name>
+        <Developer>&amp;SonyInteractive</Developer>
+        <Publisher>&amp;SonyInteractive</Publisher>
+        <Genre>Action</Genre>
+        <Platform>PlayStation</Platform>
+        <Rating>9.2</Rating>
+        <ReleaseYear>2018</ReleaseYear>
+    </Game4>
+
+    <Game5>
+        <Name>Red Dead Redemption 2</Name>
+        <Developer>&amp;RockstarGames</Developer>
+        <Publisher>&amp;RockstarGames</Publisher>
+        <Genre>Action Adventure</Genre>
+        <Platform>Xbox</Platform>
+        <Rating>9.5</Rating>
+        <ReleaseYear>2018</ReleaseYear>
+    </Game5>
+
+    <Game6>
+        <Name>Assassin's Creed Valhalla</Name>
+        <Developer>&amp;Ubisoft</Developer>
+        <Publisher>&amp;Ubisoft</Publisher>
+        <Genre>Action RPG</Genre>
+        <Platform>PC</Platform>
+        <Rating>9.0</Rating>
+        <ReleaseYear>2020</ReleaseYear>
+    </Game6>
+
+    <Game7>
+        <Name>Grand Theft Auto V</Name>
+        <Developer>&amp;RockstarGames</Developer>
+        <Publisher>&amp;RockstarGames</Publisher>
+        <Genre>&amp;RPG</Genre>
+        <Platform>PlayStation 4</Platform>
+        <Rating>9.5</Rating>
+        <ReleaseYear>2013</ReleaseYear>
+    </Game7>
+
+    <Game8>
+        <Name>The Witcher 3</Name>
+        <Developer>&amp;CDProjekt</Developer>
+        <Publisher>&amp;CDProjekt</Publisher>
+        <Genre>&amp;RPG</Genre>
+        <Platform>PC</Platform>
+        <Rating>9.8</Rating>
+        <ReleaseYear>2015</ReleaseYear>
+    </Game8>
+
+    <Game9>
+        <Name>DOOM Eternal</Name>
+        <Developer>&amp;Bethesda</Developer>
+        <Publisher>&amp;Bethesda</Publisher>
+        <Genre>&amp;FPS</Genre>
+        <Platform>Xbox One</Platform>
+        <Rating>9.0</Rating>
+        <ReleaseYear>2020</ReleaseYear>
+    </Game9>
+</gamevault>
