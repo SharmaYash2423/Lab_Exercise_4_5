@@ -34,6 +34,7 @@
                         <th>Platform</th>
                         <th>Rating</th>
                         <th>Release Year</th>
+                        <th>Description</th>
                     </tr>
                     <xsl:for-each select="gv:gamevault/*">
                         <tr>
@@ -44,6 +45,7 @@
                             <td><xsl:value-of select="gv:Platform"/></td>
                             <td><xsl:value-of select="gv:Rating"/></td>
                             <td><xsl:value-of select="gv:ReleaseYear"/></td>
+                            <td><xsl:value-of select="gv:Description"/></td>
                         </tr>
                     </xsl:for-each>
                 </table>
