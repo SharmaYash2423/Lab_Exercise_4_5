@@ -43,6 +43,7 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
+           <xs:element name="Description" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 
