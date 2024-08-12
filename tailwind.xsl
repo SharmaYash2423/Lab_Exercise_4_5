@@ -22,6 +22,7 @@
               <th class="border px-4 py-2">Platform</th>
               <th class="border px-4 py-2">Rating</th>
               <th class="border px-4 py-2">Release Year</th>
+              <th class="border px-4 py-2">Description</th>
             </tr>
           </thead>
           <tbody>
@@ -34,6 +35,7 @@
                 <td class="border px-4 py-2"><xsl:value-of select="gv:Platform"/></td>
                 <td class="border px-4 py-2"><xsl:value-of select="gv:Rating"/></td>
                 <td class="border px-4 py-2"><xsl:value-of select="gv:ReleaseYear"/></td>
+                <td class="border px-4 py-2"><xsl:value-of select="gv:Description"/></td>
               </tr>
             </xsl:for-each>
           </tbody>
